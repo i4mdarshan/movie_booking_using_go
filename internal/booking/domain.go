@@ -1,4 +1,9 @@
 package booking
+import "errors"
+
+var (
+	ErrSeatAlreadyBooked = errors.New("seat is already taken")
+)
 
 // Booking represents a confirmed seat reservation.
 type Booking struct {
